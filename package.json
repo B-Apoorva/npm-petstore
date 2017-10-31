@@ -1,0 +1,25 @@
+{
+  "name": "npm-petstore",
+  "version": "1.0.0",
+  "description": "sample pet store app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rosh-sandbox/npm-petstore.git"
+  },
+  "author": "Roshan Deniyage",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/rosh-sandbox/npm-petstore/issues"
+  },
+  "homepage": "https://github.com/rosh-sandbox/npm-petstore#readme",
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "request": "^2.83.0",
+    "uglify-js": "^3.1.6",
+    "underscore": "^1.8.3"
+  }
+}
