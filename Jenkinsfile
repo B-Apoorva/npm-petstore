@@ -1,5 +1,8 @@
 pipeline{
 agent any
+  tools {
+    nodejs "nodejs-10.0.0"
+}
   stages{
     stage('Git Chekout'){
       steps{
