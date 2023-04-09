@@ -1,12 +1,12 @@
 pipeline{
 agent any
   stages{
-    stage(Get Code){
+    stage("Git Chekout"){
       steps{
       https://github.com/B-Apoorva/npm-petstore.git
       }
     }
-    stage(build){
+    stage("Build"){
       steps{
       sh'mvn clean install package'
       }
