@@ -12,11 +12,12 @@ agent any
     stage('Install Dependencies'){
       steps{
       sh 'npm install'
+      sh 'npm audit fix'
       }
     }
     stage('Build'){
       steps{
-      sh 'npm package'
+      sh 'npm-run'
       }
     }
     stage('Test'){
