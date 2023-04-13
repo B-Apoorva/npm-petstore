@@ -16,7 +16,10 @@ agent any
     }
     stage('Build'){
       steps{
-      sh 'npm test [test.js]'
+      sh 'npm audit fix'
+      sh 'npm audit'
+      sh 'npm up'
+      sh 'npm t'
       }
     }
     stage('Test'){
