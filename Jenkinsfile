@@ -6,12 +6,17 @@ agent any
   stages{
     stage('Git Chekout'){
       steps{
-      git credentialsId: 'bacf9471-7e4e-424f-91a8-6109e11e5e4a', url: 'https://github.com/B-Apoorva/npm-petstore.git'
+        git credentialsId: 'ba0f45f0-7b2b-4c7f-b804-5a843cd4a163', url: 'https://github.com/B-Apoorva/npm-petstore.git'
+      }
+    }
+    stage('Install Dependencies'){
+      steps{
+      sh 'npm install'
       }
     }
     stage('Build'){
       steps{
-      sh 'mvn clean install package'
+      sh 'npm build [package.json]'
       }
     }
   }
