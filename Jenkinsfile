@@ -16,7 +16,7 @@ agent any
     }
     stage('Build'){
       steps{
-      sh 'npm build'
+      sh 'npm clean package'
       }
     }
     stage('Test'){
