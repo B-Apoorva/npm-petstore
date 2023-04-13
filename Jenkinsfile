@@ -22,10 +22,5 @@ agent any
       sh 'npm t'
       }
     }
-    stage('Test'){
-      steps{
-      sh 'node test'
-      }
-    }
   }
 }
