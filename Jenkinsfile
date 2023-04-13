@@ -16,7 +16,7 @@ agent any
     }
     stage('Build'){
       steps{
-      sh 'npm build [npm-shrinkwrap.json]'
+      sh 'npm test [npm-shrinkwrap.json]'
       }
     }
     stage('Test'){
