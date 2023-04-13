@@ -1,7 +1,7 @@
 pipeline{
 agent any
   tools {
-    nodejs "node"
+    nodejs "NodeJS 19.9.0"
 }
   stages{
     stage('Git Chekout'){
