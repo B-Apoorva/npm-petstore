@@ -16,7 +16,7 @@ agent any
     }
     stage('Build'){
       steps{
-      sh 'npm cit'
+      sh 'npm build [<npm-shrinkwrap.json>]'
       }
     }
     stage('Test'){
