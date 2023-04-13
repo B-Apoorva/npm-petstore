@@ -16,7 +16,7 @@ agent any
     }
     stage('Build'){
       steps{
-      sh 'npm-run'
+      sh 'npm cit'
       }
     }
     stage('Test'){
