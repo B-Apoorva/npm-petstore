@@ -1,7 +1,7 @@
 pipeline{
 agent any
   tools {
-    nodejs "nodejs-10.0.0"
+    nodejs "node"
 }
   stages{
     stage('Git Chekout'){
@@ -17,6 +17,11 @@ agent any
     stage('Build'){
       steps{
       sh 'npm build [package.json]'
+      }
+    }
+    stage('Test'){
+      steps{
+      sh 'node test'
       }
     }
   }
