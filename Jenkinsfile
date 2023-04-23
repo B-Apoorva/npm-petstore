@@ -16,8 +16,7 @@ agent any
     }
     stage('Build'){
       steps{
-      sh 'npm build'
-      sh 'npm t'
+      sh 'npm install-ci-test'
       }
     }
   }
